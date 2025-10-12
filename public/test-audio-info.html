@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Audio Files</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+      .audio-test {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      audio {
+        width: 100%;
+        margin: 10px 0;
+      }
+      .info {
+        background: #e3f2fd;
+        padding: 15px;
+        border-radius: 4px;
+        margin: 10px 0;
+      }
+      code {
+        background: #f0f0f0;
+        padding: 2px 4px;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🎵 Test Audio Files for Blog</h1>
+
+    <div class="audio-test">
+      <h2>Test Audio 1: Baby Elephant Walk (60 seconds)</h2>
+      <audio controls>
+        <source
+          src="https://www2.cs.uic.edu/~i101/SoundFiles/BabyElephantWalk60.wav"
+          type="audio/wav"
+        />
+        Your browser does not support the audio element.
+      </audio>
+      <div class="info">
+        <strong>URL:</strong>
+        <code
+          >https://www2.cs.uic.edu/~i101/SoundFiles/BabyElephantWalk60.wav</code
+        ><br />
+        <strong>Duration:</strong> ~60 seconds<br />
+        <strong>Format:</strong> WAV<br />
+        <strong>Use:</strong> Good for testing longer audio content
+      </div>
+    </div>
+
+    <div class="audio-test">
+      <h2>Test Audio 2: Short Beep (2 seconds)</h2>
+      <audio controls>
+        <source
+          src="https://www.soundjay.com/misc/sounds/beep-07a.wav"
+          type="audio/wav"
+        />
+        Your browser does not support the audio element.
+      </audio>
+      <div class="info">
+        <strong>URL:</strong>
+        <code>https://www.soundjay.com/misc/sounds/beep-07a.wav</code><br />
+        <strong>Duration:</strong> ~2 seconds<br />
+        <strong>Format:</strong> WAV<br />
+        <strong>Use:</strong> Good for testing quick audio
+      </div>
+    </div>
+
+    <div class="audio-test">
+      <h2>How to Use These in Your Blog</h2>
+      <p>
+        Copy any of the URLs above and add them to your blog post's frontmatter:
+      </p>
+      <pre><code>---
+title: "Your Blog Post"
+date: "2024-12-15"
+author: "Your Name"
+tags: ["Audio", "Test"]
+readTime: "3 min read"
+published: true
+excerpt: "Testing audio functionality"
+audioUrl: "PASTE_URL_HERE"
+---</code></pre>
+    </div>
+
+    <div class="audio-test">
+      <h2>🎯 Testing Checklist</h2>
+      <ul>
+        <li>✅ Audio player appears on blog post</li>
+        <li>✅ Play button works</li>
+        <li>✅ Pause button works</li>
+        <li>✅ Progress bar shows playback progress</li>
+        <li>✅ Time display shows current/total time</li>
+        <li>✅ Audio stops when it reaches the end</li>
+        <li>✅ Player is responsive on mobile</li>
+      </ul>
+    </div>
+
+    <div class="info">
+      <h3>📝 Notes:</h3>
+      <ul>
+        <li>These are publicly available test audio files</li>
+        <li>For production, upload your own audio to Firebase Storage</li>
+        <li>Audio files should be under 60 seconds for best user experience</li>
+        <li>MP3 format is recommended for better compression</li>
+      </ul>
+    </div>
+  </body>
+</html>
