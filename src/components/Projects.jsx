@@ -1,4 +1,4 @@
-import unisun_homepage from "../images/unisun_homepage.png";
+import unisun_homepage from "../images/Unisun_Homepage.png";
 import glimpse_logo from "../images/glimpse_logo.png";
 const Projects = () => {
   const featuredProjects = [
