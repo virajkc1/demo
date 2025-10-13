@@ -13,7 +13,7 @@ const Projects = () => {
     {
       title: "Glimpse Browser Extension (TBF)",
       description:
-        "A forum site where students from the same course and university can communicate with peers and alumni asking for insight on course queries and career advice.",
+        "A browser extension that allows you to call GPT-4 API from any website, sending instant zero shot responses.",
       picture: glimpse_logo,
       link: "",
       tech: ["Manifest V3", "React.js", "Node.js", "GPT-4 API", "Tailwind CSS"],
