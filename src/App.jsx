@@ -5,8 +5,6 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import Blog from "./components/Blog";
-import BlogPost from "./components/BlogPost";
 
 function App() {
   return (
@@ -26,8 +24,6 @@ function App() {
                 </>
               }
             />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:postId" element={<BlogPost />} />
           </Routes>
         </main>
       </div>

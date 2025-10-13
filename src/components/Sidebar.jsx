@@ -83,11 +83,6 @@ const Sidebar = () => {
                 Contact
               </a>
             </li>
-            <li>
-              <a href="#" onClick={() => handleNavigation("/blog")}>
-                Blog
-              </a>
-            </li>
           </ul>
         </nav>
       </div>

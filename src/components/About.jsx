@@ -49,7 +49,7 @@ const About = () => {
       <div className="mt-[100px] max-w-2xl mx-auto">
         <p className="text-[17px] text-gray-700  text-left">Where:</p>
         <img
-          className=" rounded-lg mt-8 h-[20vw] shadow-md object-cover min-w-[45vw] mx-auto hover:shadow-lg"
+          className=" rounded-lg mt-8 h-[15vw] shadow-md object-cover w-[30vw] mx-auto hover:shadow-lg"
           src={location}
         ></img>
         <div className="flex items-center justify-end mt-5">
