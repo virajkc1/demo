@@ -1,34 +1,22 @@
-import { FaExternalLinkAlt, FaGithub, FaArrowRight } from "react-icons/fa";
-
+import unisun_homepage from "../images/unisun_homepage.png";
+import glimpse_logo from "../images/glimpse_logo.png";
 const Projects = () => {
   const featuredProjects = [
     {
-      title: "Build a Spotify Connected App",
+      title: "Unisun Community Platform",
       description:
-        "A video course that teaches you how to build a web application using the Spotify Web API. Along the way, you'll build a project management app called Taskly.",
-      stats: "★ 696",
-      tech: ["React", "Express", "Spotify API", "Heroku"],
+        "A forum site where students from the same course and university can communicate with peers and alumni asking for insight on course queries and career advice.",
+      picture: unisun_homepage,
+      link: "https://theunisun.com",
+      tech: ["React", "Node.js", "NoSQL", "Express.js", "Tailwind CSS"],
     },
     {
-      title: "Halcyon Theme",
+      title: "Glimpse Browser Extension (TBF)",
       description:
-        "A minimal, dark blog theme for Jekyll, Ghost and other static site generators. Built with vanilla JavaScript and Sass.",
-      stats: "100k+ Installs",
-      tech: ["JavaScript", "Sass", "Jekyll", "Ghost"],
-    },
-    {
-      title: "brittanychiang.com (v4)",
-      description:
-        "The fourth iteration of my personal website built with Gatsby, Styled Components, and deployed on Netlify.",
-      stats: "★ 8,086",
-      tech: ["Gatsby", "Styled Components", "Netlify"],
-    },
-    {
-      title: "Apple Music Web Player",
-      description:
-        "A web-based music player built with Ember.js and the Apple Music JavaScript SDK. Features include playlist management and offline playback.",
-      stats: "Featured on Apple",
-      tech: ["Ember", "JavaScript", "Apple Music SDK", "CSS"],
+        "A forum site where students from the same course and university can communicate with peers and alumni asking for insight on course queries and career advice.",
+      picture: glimpse_logo,
+      link: "",
+      tech: ["Manifest V3", "React.js", "Node.js", "GPT-4 API", "Tailwind CSS"],
     },
   ];
 
@@ -53,64 +41,54 @@ const Projects = () => {
   return (
     <section id="projects" className="section">
       <h2>Projects</h2>
+      {featuredProjects.map((exp, index) => {
+        return (
+          <div
+            key={index}
+            className="max-w-[600px] mx-auto flex flex-col mb-10"
+          >
+            <div>
+              <div className="flex flex-row justify-between">
+                <h4 className="text-start mb-2 text-lg text-gray-700 font-semibold ">
+                  {exp.title}
+                </h4>
+                <a
+                  className="text-blue-600 hover:underline font-md"
+                  href={exp.link}
+                >
+                  <span>... more</span>
+                </a>
+              </div>
 
-      <div className="projects-grid">
-        {featuredProjects.map((project, index) => (
-          <div key={index} className="project-card">
-            <div className="project-header">
-              <a href="#" className="project-title">
-                {project.title}
-                <FaExternalLinkAlt />
-              </a>
-              <div className="project-stats">{project.stats}</div>
-            </div>
-            <p className="project-description">{project.description}</p>
-            <div className="project-tech">
-              {project.tech.map((tech, techIndex) => (
-                <span key={techIndex}>{tech}</span>
-              ))}
+              <h1 className="text-start leading-0 text-gray-700 text-sm ">
+                {exp.description}
+              </h1>
+              <div className="mt-10 flex bg-[#f7f7f7] rounded-lg pb-10 p-5 justify-center">
+                <img
+                  className="w-[80%] h-[90%] mt-auto mb-auto justify-center object-cover border-gray-200  shadow-xl rounded-md"
+                  src={exp.picture}
+                />
+              </div>
+              {/* <p className="text-center text-gray-500  text-sm mt-5">
+                {exp.tech}
+              </p> */}
+              <div className="flex flex-wrap gap-2 justify-center mt-5">
+                {exp.tech.map((tech, index) => (
+                  <p key={index} className="text-gray-500 text-sm">
+                    {tech}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
-        ))}
-      </div>
-
-      <div style={{ marginTop: "40px", marginBottom: "40px" }}>
-        <a href="#" className="archive-link">
-          View Full Project Archive
-          <FaArrowRight />
+        );
+      })}
+      <div className="flex mx-auto max-w-[600px] flex-row mt-5">
+        <a href="https://github.com/virajkc1">
+          <span className="text-start text-blue-600 font-md ">
+            ... <span className="hover:underline">other projects</span>
+          </span>
         </a>
-      </div>
-
-      <div className="additional-projects">
-        <h3
-          style={{ color: "#ccd6f6", fontSize: "20px", marginBottom: "20px" }}
-        >
-          Other Noteworthy Projects
-        </h3>
-
-        {additionalProjects.map((project, index) => (
-          <div key={index} className="additional-project">
-            <div className="project-year">{project.year}</div>
-            <div className="project-thumbnail">{project.icon}</div>
-            <div className="project-info">
-              <a href="#">
-                {project.title}
-                <FaExternalLinkAlt />
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <div className="footer">
-        <div className="footer-content">
-          <div className="footer-text">
-            Loosely designed in Figma and coded in Visual Studio Code by yours
-            truly. Built with Next.js and Tailwind CSS, deployed with Vercel.
-            All text is set in the Inter typeface.
-          </div>
-          <div className="footer-icon">🚀</div>
-        </div>
       </div>
     </section>
   );

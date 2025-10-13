@@ -1,78 +1,40 @@
-import { FaExternalLinkAlt, FaCheck } from "react-icons/fa";
+import unisun from "../images/Unisun_Logo.png";
+import pmgroup from "../images/PM_Group_Logo.jpg";
+import uob from "../images/uob_startup.png";
 
 const Experience = () => {
   const experiences = [
     {
-      dates: "2024 - PRESENT",
-      title: "Senior Frontend Engineer, Accessibility",
-      company: "Klaviyo",
+      dates: "June 2025 - Present",
+      title: "Software Engineer / Founder",
+      company: "Unisun",
       description:
-        "Building accessible UI components for Klaviyo's platform with a focus on inclusive design and WCAG compliance.",
-      tech: ["JavaScript", "TypeScript", "React", "Storybook"],
-      links: [],
+        "Building a community platform for university students on the same course to connect, communicate and collaborate.",
+      image: unisun,
     },
     {
-      dates: "2018 - 2024",
-      title: "Lead Engineer",
-      company: "Upstatement",
+      dates: "June 2025 - Sept 2025",
+      title: "Co Founder",
+      company: "UOB Startup Society",
       description:
-        "Building high-quality websites, design systems, and mobile apps for various clients including Harvard Business School, Spotify, and The Boston Globe.",
-      tech: [
-        "JavaScript",
-        "TypeScript",
-        "HTML & SCSS",
-        "React",
-        "Next.js",
-        "React Native",
-        "WordPress",
-        "Contentful",
-        "Node.js",
-        "PHP",
-      ],
-      links: [],
+        "Forming a community of ambitious students to help each other succeed in their startups.",
+      image: uob,
     },
     {
-      dates: "July - Dec 2017",
-      title: "UI Engineer Co-op",
-      company: "Apple",
+      dates: "May 2025 - Aug 2025",
+      title: "Data Analytics Intern",
+      company: "PM Group",
       description:
-        "Developed web applications for Apple Music, including an embeddable player widget used by publications like 9to5Mac and The Verge.",
-      tech: ["Ember", "SCSS", "JavaScript", "MusicKit.js"],
-      links: [
-        { text: "MusicKit.js", url: "#" },
-        { text: "9to5Mac", url: "#" },
-        { text: "The Verge", url: "#" },
-      ],
+        "Analyzing data to help the company make data-driven decisions.",
+      image: pmgroup,
     },
     {
-      dates: "2016 - 2017",
-      title: "Developer",
-      company: "Scout Studio",
+      dates: "Sept 2024 - June 2025",
+      title: "Engineering Intern",
+      company: "PM Group",
       description:
         "Collaborated on pro-bono projects for community organizations, focusing on clean code and user experience.",
-      tech: ["Jekyll", "SCSS", "JavaScript", "WordPress"],
-      links: [],
-    },
-    {
-      dates: "July - Dec 2016",
-      title: "Software Engineer Co-op",
-      company: "Starry",
-      description:
-        "Engineered features for a customer-facing Android app, working with Cordova and Backbone.js frameworks.",
-      tech: ["Cordova", "Backbone", "JavaScript", "CSS"],
-      links: [
-        { text: "Android App", url: "#" },
-        { text: "ScreenTime 2.0", url: "#" },
-      ],
-    },
-    {
-      dates: "July - Dec 2015",
-      title: "Creative Technologist Co-op",
-      company: "MullenLowe U.S.",
-      description:
-        "Developed and maintained client websites, working closely with designers and account managers.",
-      tech: ["HTML", "CSS", "JavaScript", "jQuery"],
-      links: [],
+      image: pmgroup,
     },
   ];
 
@@ -80,39 +42,27 @@ const Experience = () => {
     <section id="experience" className="section">
       <h2>Experience</h2>
       {experiences.map((exp, index) => (
-        <div key={index} className="experience-item">
-          <div className="experience-dates">{exp.dates}</div>
-          <div className="experience-content">
-            <h3>{exp.title}</h3>
-            <h4>{exp.company}</h4>
-            <p>{exp.description}</p>
-            <div className="tech-tags">
-              {exp.tech.map((tech, techIndex) => (
-                <span key={techIndex} className="tech-tag">
-                  {tech}
-                </span>
-              ))}
+        <div
+          key={index}
+          className="flex flex-col max-w-[700px] mx-auto  mb-10 border-b-2 rounded-lg "
+        >
+          <div className="flex flex-row justify-between pt-5 mb-0">
+            <div className="flex-row flex ml-4  ">
+              <img
+                className="w-[60px] h-[60px] object-cover rounded-full"
+                src={exp.image}
+              />
+              <h4 className="mt-2 ml-2 text-lg  text-gray-900 font">
+                {exp.company}
+              </h4>
             </div>
-            {exp.links.length > 0 && (
-              <div className="experience-links">
-                {exp.links.map((link, linkIndex) => (
-                  <a key={linkIndex} href={link.url}>
-                    <FaCheck />
-                    {link.text}
-                  </a>
-                ))}
-              </div>
-            )}
+            <h3 className="mr-5 text-gray-900 ">{exp.dates}</h3>
+          </div>
+          <div className="text-end -mt-5">
+            <h3 className="mr-5 mb-8 text-gray-700 ">{exp.title}</h3>
           </div>
         </div>
       ))}
-
-      <div style={{ marginTop: "40px" }}>
-        <a href="#" className="archive-link">
-          View Full Résumé
-          <FaExternalLinkAlt />
-        </a>
-      </div>
     </section>
   );
 };

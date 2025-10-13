@@ -1,29 +1,29 @@
 const Contact = () => {
   return (
-    <section id="contact" className="section">
+    <section id="contact" className="section flex flex-col items-center mt-10">
       <h2>Contact Me</h2>
-      <div className="contact-content">
+      <div className="contact-content ">
         <p>
-          I'm currently looking for new opportunities, my inbox is always open. 
-          Whether you have a question or just want to say hi, I'll try my best 
-          to get back to you!
+          I'm looking for a graduate role in a software / technology programme.
+          Whether you are a recruiter or a developer who wants to collaborate on
+          a project, please reach out!
         </p>
-        
+
         <div className="contact-links">
-          <a href="mailto:brittany.chiang@gmail.com" className="contact-button">
+          <a
+            href="https://www.linkedin.com/in/viraj-chapaneri"
+            className="contact-button"
+          >
             Say Hello
           </a>
         </div>
-        
+
         <div className="contact-info">
           <div className="contact-item">
-            <strong>Email:</strong> brittany.chiang@gmail.com
+            <strong>Email:</strong> virajkc2003@gmail.com
           </div>
           <div className="contact-item">
-            <strong>Location:</strong> Boston, MA
-          </div>
-          <div className="contact-item">
-            <strong>Availability:</strong> Open for opportunities
+            <strong>Location:</strong> Leicester, UK
           </div>
         </div>
       </div>

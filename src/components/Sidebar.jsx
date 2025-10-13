@@ -1,11 +1,6 @@
-import {
-  FaGithub,
-  FaLinkedin,
-  FaInstagram,
-  FaTwitter,
-  FaDribbble,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { useNavigate, useLocation } from "react-router-dom";
+import my_name from "../images/my_name.png";
 
 const Sidebar = () => {
   const navigate = useNavigate();
@@ -29,11 +24,14 @@ const Sidebar = () => {
   return (
     <aside className="sidebar">
       <div>
-        <h1 className="name">Brittany Chiang</h1>
-        <h2 className="title">Front End Engineer</h2>
-        <p className="tagline">
-          I build accessible, pixel-perfect digital experiences for the web.
-        </p>
+        <h1 className="name">
+          <img
+            src={my_name}
+            alt="Viraj Chapaneri"
+            className="m-auto w-[80%] h-[80%] object-cover"
+          />
+        </h1>
+        <h2 className="title pb-10">Junior Software Engineer</h2>
 
         <nav>
           <ul className="nav-links">
@@ -95,32 +93,19 @@ const Sidebar = () => {
       </div>
 
       <div className="social-links">
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/virajkc1"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub />
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://linkedin.com/in/viraj-chapaneri"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaLinkedin />
-        </a>
-        <a
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaInstagram />
-        </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <FaTwitter />
-        </a>
-        <a
-          href="https://dribbble.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaDribbble />
         </a>
       </div>
     </aside>
