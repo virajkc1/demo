@@ -83,6 +83,15 @@ const Sidebar = () => {
                 Contact
               </a>
             </li>
+            <li>
+              <a
+                href="https://virajchapaneri.substack.com/p/virajs-blog"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Blog
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
