@@ -9,7 +9,7 @@ const About = () => {
         <p className=" text-gray-600 leading-8">
           Hello! My name is Viraj, Welcome to the
           <span> </span>
-          <a href="/blog">
+          <a href="https://virajchapaneri.substack.com/p/virajs-blog">
             <span className="text-blue-600 font-medium mb-6 hover:underline">
               2nd iteration
             </span>
@@ -22,7 +22,7 @@ const About = () => {
             </span>
           </a>
           <span> </span>and I enjoy creating web applications that add value for
-          real users. Here I will showcase a few projects that I am proud.
+          real users. Here I will showcase a few projects that I am proud of.
         </p>
 
         <p className="text-md text-gray-600 leading-8">
@@ -42,7 +42,7 @@ const About = () => {
               blog
             </span>
           </a>
-          , Journaling all new concepts I learn daily. Feel free to check it
+          , journaling all new concepts I learn daily. Feel free to check it
           out!
         </p>
       </div>
