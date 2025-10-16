@@ -15,7 +15,7 @@ const Projects = () => {
       description:
         "A browser extension that allows you to call GPT-4 API from any website, sending instant zero shot responses.",
       picture: glimpse_logo,
-      link: "",
+      link: "https://github.com/virajkc1",
       tech: ["Manifest V3", "React.js", "Node.js", "GPT-4 API", "Tailwind CSS"],
     },
   ];

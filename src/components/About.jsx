@@ -7,15 +7,8 @@ const About = () => {
       <div className="about-content max-w-2xl mx-auto">
         <p className="text-[17px] text-gray-700  text-left font-abold">Me:</p>
         <p className=" text-gray-600 leading-8">
-          Hello! My name is Viraj, Welcome to the
-          <span> </span>
-          <a href="https://virajchapaneri.substack.com/p/virajs-blog">
-            <span className="text-blue-600 font-medium mb-6 hover:underline">
-              2nd iteration
-            </span>
-            <span> </span>
-          </a>
-          of my portfolio. I am a junior<span> </span>
+          Hello! My name is Viraj, Welcome to the 2nd iteration of my portfolio.
+          I am a junior<span> </span>
           <a href="https://github.com/virajkc1">
             <span className="text-blue-600 font-medium mb-6 hover:underline">
               software engineer
@@ -37,7 +30,10 @@ const About = () => {
 
         <p className="text-md text-gray-600 leading-relaxed">
           I have also started my own interactive <span> </span>
-          <a href="/blog" className="inline-block mx-1">
+          <a
+            href="https://virajchapaneri.substack.com/p/virajs-blog"
+            className="inline-block mx-1"
+          >
             <span className="text-blue-700 font-medium  hover:underline transition-all duration-200">
               blog
             </span>
